@@ -1,0 +1,61 @@
+{
+  "name": "@julio-soto/shared-context-library",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "release": {
+    "plugins": [
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "~17.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@types/react": "^17.0.11",
+    "husky": "^6.0.0",
+    "semantic-release": "^17.4.4"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "compile": "tsc",
+    "build": "yarn run prebuild && yarn run compile",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsberlanga/shared-context-library.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/jsberlanga/shared-context-library/issues"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "homepage": "https://github.com/jsberlanga/shared-context-library#readme",
+  "description": ""
+}
