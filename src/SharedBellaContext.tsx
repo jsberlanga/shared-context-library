@@ -1,11 +1,11 @@
 import * as React from "react";
 
-interface SharedBellaContextProps {
+interface ISharedBellaContext {
   isBellaPageType?: boolean;
   featureToggles?: unknown[];
 }
 
-const SharedBellaContext = React.createContext<SharedBellaContextProps>({
+const SharedBellaContext = React.createContext<ISharedBellaContext>({
   isBellaPageType: undefined,
   featureToggles: undefined,
 });
