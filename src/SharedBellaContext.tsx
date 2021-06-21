@@ -44,6 +44,12 @@ const SharedBellaContextProvider = ({
 const useSharedBellaContext = () => {
   const context = React.useContext(SharedBellaContext);
 
+  if (!context) {
+    throw new Error(
+      "Ensure your component is wrapped inside a SharedBellaContextProvider"
+    );
+  }
+
   return context;
 };
 
