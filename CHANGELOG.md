@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/jsberlanga/shared-context-library/compare/v1.0.0...v1.1.0) (2021-06-21)
+
+
+### Features
+
+* build ([8eec2d4](https://github.com/jsberlanga/shared-context-library/commit/8eec2d453364ff2a0e8948f42c37324616e1c935))
+
 # 1.0.0 (2021-06-21)
 
 
