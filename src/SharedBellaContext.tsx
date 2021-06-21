@@ -29,6 +29,7 @@ const SharedBellaContextProvider = ({
   const memoizedValue = React.useMemo(
     () => ({
       isBellaPageType,
+      test: 123,
       featureToggles: value.featureToggles,
     }),
     [isBellaPageType, value.featureToggles]
